@@ -28,7 +28,7 @@
 
 main {
   display: grid;
-  grid-template-rows: min(200px, 10vh) 1fr;
+  grid-template-rows: min(200px, 10vh) 1fr 1fr;
   grid-template-columns: min(400px, 20vw) 1fr;
   height: 100vh;
 }
@@ -48,23 +48,33 @@ main {
 }
 
 #search {
-  flex: 1;
   margin-right: 5vw;
   margin-left: 12px;
-  border-radius: 8px;
+  border-radius: 16px;
+  width: clamp(30vw, 800px, 50vw);
+  border: none;
+  padding-left: 12px;
 }
 
 .user-corner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
   margin-right: 5vw;
+}
+
+.user-img > img {
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  margin-top: 8px;
 }
 
 .navbar {
   background-color: var(--dark-prim);
   color: white;
-  grid-area: 1 / 1 / 3 / 2;
+  grid-area: 1 / 1 / 4 / 2;
   display: grid;
   grid-template-rows: min(200px, 10vh) 1fr;
 }
@@ -94,4 +104,13 @@ main {
 .nav-list > li > a {
   text-decoration: none;
   color: white;
+}
+
+.greeting {
+  background-color: #36427f;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.greeting-img > img {
+  border-radius: 50%;
 }
