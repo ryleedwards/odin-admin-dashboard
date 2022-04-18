@@ -153,6 +153,7 @@ main {
 }
 
 .card {
+  max-height: 200px;
   background-color: var(--dark-cream);
   border-left: solid 8px var(--dark-purple);
   border-radius: 8px;
