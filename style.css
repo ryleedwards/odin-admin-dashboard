@@ -165,6 +165,7 @@ main {
 
 .card > :last-child {
   justify-self: right;
+  align-self: flex-end;
 }
 
 .card-description {
