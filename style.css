@@ -150,6 +150,12 @@ main {
   grid-area: 1 / 1 / 3 / 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 24px auto;
+}
+
+.projects > p {
+  margin: 8px 0 0 16px;
+  font-weight: bold;
 }
 
 .card {
@@ -178,8 +184,56 @@ main {
 }
 
 .announcements {
-  background-color: #bcb4c0;
+  background-color: var(--light-sec);
+  padding: 16px;
+  font-weight: bold;
 }
+
+.announcements-container {
+  margin-top: 16px;
+  background-color: var(--dark-cream);
+  padding: 16px;
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+}
+.break {
+  height: 1px;
+  background-color: var(--dark-gray);
+}
+.announcement-title {
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin: 4px;
+}
+
+.announcement {
+  font-weight: normal;
+  padding-bottom: 8px;
+}
+
 .trending {
-  background-color: #332f6f;
+  background-color: var(--light-sec);
+}
+
+.trending > p {
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+.trending > div {
+  background-color: var(--dark-cream);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 16px;
+  border-radius: 8px;
+
+  margin: 16px;
+  align-items: center;
+}
+
+.trending > div > div:nth-child(odd) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
