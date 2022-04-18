@@ -146,10 +146,32 @@ main {
 }
 
 .projects {
-  background-color: #676aa2;
+  background-color: var(--light-sec);
   grid-area: 1 / 1 / 3 / 2;
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
+.card {
+  background-color: var(--dark-cream);
+  border-left: solid 8px var(--dark-purple);
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  box-shadow: -1px 1px 5px 0px var(--dark-prim);
+  font-weight: bold;
+  display: grid;
+}
+
+.card > :last-child {
+  justify-self: right;
+}
+
+.card-description {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
 .announcements {
   background-color: #bcb4c0;
 }
