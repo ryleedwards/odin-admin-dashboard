@@ -69,8 +69,17 @@ main {
   grid-template-rows: min(200px, 10vh) 1fr;
 }
 
+.nav-logo > i {
+  margin: 0 24px;
+}
+
 .nav-logo {
   align-self: center;
+  font-size: 1.5rem;
+}
+
+.nav-link > a > i {
+  margin: 0 12px;
 }
 
 .nav-list > li {
